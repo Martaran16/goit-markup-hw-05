@@ -31,7 +31,7 @@
 
           <ul class="nav-items list">
             <li class="nav-item">
-              <a href="./index.html" class="nav-link link">Studio</a>
+              <a href="./index.html" class="nav-link active link">Studio</a>
             </li>
             <li class="nav-item">
               <a href="./portfolio.html" class="nav-link link">Portfolio</a>
@@ -68,7 +68,9 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero-subject">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-btn">Order Service</button>
+          <button type="button" class="hero-btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -516,5 +518,22 @@
         </div>
       </div>
     </footer>
+
+    <!-- <svg class="icon icon-close-black">
+            <use href="./images/icons.svg#icon-close-black">
+              icon-close-black
+            </use>
+          </svg> -->
+    <!-- modal---------------------------- -->
+    <div class="backdropp is-hidden" data-modal>
+      <div class="modal">
+        <div class="slose-btn" data-modal-close>
+          <svg class="close-svg" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
